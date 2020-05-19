@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+	<LangVersion>8.0</LangVersion>
+    <UseWPF>true</UseWPF>
+    <CodeAnalysisRuleSet>stylecop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataBase\BildingsDb.mdf" />
+    <None Remove="Resources\1.jpg" />
+    <None Remove="Resources\BuildingImage1.jpg" />
+    <None Remove="Resources\BuildingImage10.jpg" />
+    <None Remove="Resources\BuildingImage11.jpg" />
+    <None Remove="Resources\BuildingImage12.jpg" />
+    <None Remove="Resources\BuildingImage2.jpg" />
+    <None Remove="Resources\BuildingImage3.jpg" />
+    <None Remove="Resources\BuildingImage4.jpg" />
+    <None Remove="Resources\BuildingImage5.jpg" />
+    <None Remove="Resources\BuildingImage6.jpg" />
+    <None Remove="Resources\BuildingImage7.jpg" />
+    <None Remove="Resources\BuildingImage8.jpg" />
+    <None Remove="Resources\BuildingImage9.jpg" />
+    <None Remove="Resources\First.jpg" />
+    <None Remove="Resources\First.png" />
+    <None Remove="Resources\RentalPremisesImage1.jpg" />
+    <None Remove="Resources\RentalPremisesImage10.jpg" />
+    <None Remove="Resources\RentalPremisesImage11.jpg" />
+    <None Remove="Resources\RentalPremisesImage12.jpg" />
+    <None Remove="Resources\RentalPremisesImage2.jpg" />
+    <None Remove="Resources\RentalPremisesImage3.jpg" />
+    <None Remove="Resources\RentalPremisesImage4.jpg" />
+    <None Remove="Resources\RentalPremisesImage5.jpg" />
+    <None Remove="Resources\RentalPremisesImage6.jpg" />
+    <None Remove="Resources\RentalPremisesImage7.jpg" />
+    <None Remove="Resources\RentalPremisesImage8.jpg" />
+    <None Remove="Resources\RentalPremisesImage9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Resource Include="Resources\BuildingImage1.jpg" />
+    <Resource Include="Resources\BuildingImage10.jpg" />
+    <Resource Include="Resources\BuildingImage11.jpg" />
+    <Resource Include="Resources\BuildingImage12.jpg" />
+    <Resource Include="Resources\BuildingImage2.jpg" />
+    <Resource Include="Resources\BuildingImage3.jpg" />
+    <Resource Include="Resources\BuildingImage4.jpg" />
+    <Resource Include="Resources\BuildingImage5.jpg" />
+    <Resource Include="Resources\BuildingImage6.jpg" />
+    <Resource Include="Resources\BuildingImage7.jpg" />
+    <Resource Include="Resources\BuildingImage8.jpg" />
+    <Resource Include="Resources\BuildingImage9.jpg" />
+    <Resource Include="Resources\RentalPremisesImage1.jpg" />
+    <Resource Include="Resources\RentalPremisesImage10.jpg" />
+    <Resource Include="Resources\RentalPremisesImage11.jpg" />
+    <Resource Include="Resources\RentalPremisesImage12.jpg" />
+    <Resource Include="Resources\RentalPremisesImage2.jpg" />
+    <Resource Include="Resources\RentalPremisesImage3.jpg" />
+    <Resource Include="Resources\RentalPremisesImage4.jpg" />
+    <Resource Include="Resources\RentalPremisesImage5.jpg" />
+    <Resource Include="Resources\RentalPremisesImage6.jpg" />
+    <Resource Include="Resources\RentalPremisesImage7.jpg" />
+    <Resource Include="Resources\RentalPremisesImage8.jpg" />
+    <Resource Include="Resources\RentalPremisesImage9.jpg" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+
+</Project>

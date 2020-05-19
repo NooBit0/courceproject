@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Authorizations\AuthorizationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Authorizations\RegistrationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\AccountantPages\AccountantPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\AdministratorPages\AdministrorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\AdministratorPages\ListBildingsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\AdministratorPages\ListUsersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\AdministratorPages\ShowStatisticPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\OwnerPages\OwnerPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\OwnerPages\StatsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\TenantPages\ArendetPremisesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\TenantPages\BasketPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\TenantPages\ChengePasswordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\TenantPages\FreePremisesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UsersPages\TenantPages\TenantPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Authorizations\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Authorizations\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\AccountantPages\AccountantPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\AdministratorPages\AdministrorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\AdministratorPages\ListBildingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\AdministratorPages\ListUsersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\AdministratorPages\ShowStatisticPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\OwnerPages\OwnerPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\OwnerPages\StatsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\TenantPages\ArendetPremisesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\TenantPages\BasketPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\TenantPages\ChengePasswordPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\TenantPages\FreePremisesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UsersPages\TenantPages\TenantPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

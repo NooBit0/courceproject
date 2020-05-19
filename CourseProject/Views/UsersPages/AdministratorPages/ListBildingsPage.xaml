@@ -1,0 +1,32 @@
+﻿<Page x:Class="CourseProject.Views.UsersPages.AdministratorPages.ListBildingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseProject.Views.UsersPages.AdministratorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="610"
+      Title="ListBildingsPage">
+
+    <Grid Background ="#FF7F7F7F">
+        <DataGrid x:Name="CourseProjectDataGrid"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="265" Margin="10,50,0,0" VerticalAlignment="Top" Width="465">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="BuildingIDColumn" Binding="{Binding BuildingID}" IsReadOnly="True" Header="ID" Width="60"/>
+                <DataGridTextColumn x:Name="RentalNumberColumn" Binding="{Binding RentalNumber}" Header="Number" Visibility="Hidden"  Width="60"/>
+                <DataGridTextColumn x:Name="AdressColumn" Binding="{Binding Adress}" Header="Adress" Width="150" Visibility="Hidden"/>
+                <DataGridTextColumn x:Name="PriceColumn" Binding="{Binding Price}" Header="Price" Visibility="Hidden"  Width="60"/>
+                <DataGridTextColumn x:Name="AreaColumn" Binding="{Binding Area}" Header="Area" Visibility="Hidden"  Width="60"/>
+                <DataGridTextColumn x:Name="ImageColumn" Binding="{Binding Image}" Header="Image"  Width="100"/>
+                <DataGridTextColumn x:Name="RentalBeginDateColumn" Binding="{Binding RentalBeginDate}" Visibility="Hidden" Header="Rental Begin Date"  Width="100"/>
+                <DataGridTextColumn x:Name="RentalEndDateColumn" Binding="{Binding RentalEndDate}" Visibility="Hidden" Header="Rental End Date"  Width="100"/>
+                <DataGridTextColumn x:Name="RentalCheckColumn" Binding="{Binding RentalCheck}" Visibility="Hidden" Header="Rental status" Width="60"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Name="StatusTextBlock" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="465" FontFamily="Times New Roman" FontSize="28" FontStyle="Normal" Background="#00000000" Foreground="White"/>
+        <Frame x:Name="MainUserFrame" HorizontalAlignment="Left" Height="305" Margin="10,10,0,0" VerticalAlignment="Top" Width="465"/>
+        <Button x:Name="SaveBdButton" Content="Save" HorizontalAlignment="Left" Margin="160,330,0,0" VerticalAlignment="Top" Width="160" Height="40" Foreground="White" FontFamily="Times New Roman" FontSize="28" Background="Orange" Click="SaveBdButton_Click"/>
+        <Button x:Name="BildingsButton" Content="Bildings" HorizontalAlignment="Left" Margin="480,50,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange" Click="BildingsButton_Click"/>
+        <Button x:Name="RentalPremisesButton" Content="Rental Premises" HorizontalAlignment="Left" Margin="480,120,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="18" Background="Orange" Click="RentalPremisesButton_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="CourseProject.Views.UsersPages.OwnerPage.StatsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseProject.Views.UsersPages.OwnerPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="610"
+      Title="StatsPage">
+
+    <Grid Background ="#FF7F7F7F">
+        <DataGrid x:Name="CourseProjectDataGrid"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="265" Margin="10,50,0,0" VerticalAlignment="Top" Width="465">
+        </DataGrid>
+        <TextBlock Name="StatusTextBlock" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="465" FontFamily="Times New Roman" FontSize="28" FontStyle="Normal" Background="#00000000" Foreground="White"/>
+        <Frame x:Name="MainUserFrame" HorizontalAlignment="Left" Height="305" Margin="10,10,0,0" VerticalAlignment="Top" Width="465"/>
+        <Button x:Name="SaveBdButton" Content="Save" HorizontalAlignment="Left" Margin="160,330,0,0" VerticalAlignment="Top" Width="160" Height="40" Foreground="White" FontFamily="Times New Roman" FontSize="28" Background="Orange"/>
+        <Button x:Name="BildingsButton" Content="Bildings" HorizontalAlignment="Left" Margin="480,50,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange"/>
+        <Button x:Name="RentalPremisesButton" Content="Rental Premises" HorizontalAlignment="Left" Margin="480,120,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="18" Background="Orange"/>
+
+    </Grid>
+</Page>

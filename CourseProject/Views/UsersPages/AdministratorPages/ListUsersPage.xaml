@@ -1,0 +1,33 @@
+﻿<Page x:Class="CourseProject.Views.UsersPages.AdministratorPages.ListUsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseProject.Views.UsersPages.AdministratorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="610"
+      Title="ListUserPage">
+
+    <Grid Background ="#FF7F7F7F">
+        <DataGrid x:Name="UsersDataGreed" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="265" Margin="10,50,0,0" VerticalAlignment="Top" Width="465">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="FullNameColumn" Binding="{Binding FullName}" Header="FullName" Width="150"/>
+                <DataGridTextColumn x:Name="LoginColumn" Binding="{Binding Login}" Header="Login" Width="100"/>
+                <DataGridTextColumn x:Name="PasswordColumn" Binding="{Binding Password}" Header="Password" Width="100"/>
+                <DataGridTextColumn x:Name="AdressColumn" IsReadOnly="True" Binding="{Binding Adress}" Header="Adress" Width="150"/>
+                <DataGridTextColumn x:Name="RentalNumberColumn" IsReadOnly="True" Binding="{Binding RentalNumber}" Header="Rental Number" Width="100"/>
+                <DataGridTextColumn x:Name="TenantIdColumn" Binding="{Binding TenantId}" Header="Tenant Id"  Visibility="Hidden" Width="100" />
+                <DataGridTextColumn x:Name="RentalPremisesIdColumn" Binding="{Binding RentalPremisesId}" Header="Rental Premises Id"  Visibility="Hidden" Width="100" />
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Name="StatusTextBlock" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="465" FontFamily="Times New Roman" FontSize="28" FontStyle="Normal" Background="#00000000" Foreground="White"/>
+        <Frame x:Name="MainUserFrame" HorizontalAlignment="Left" Height="305" Margin="10,10,0,0" VerticalAlignment="Top" Width="465"/>
+        <Button x:Name="SaveBdButton" Content="Save" HorizontalAlignment="Left" Margin="160,330,0,0" VerticalAlignment="Top" Width="160" Height="40" Foreground="White" FontFamily="Times New Roman" FontSize="28" Background="Orange" Click="SaveBdButton_Click"/>
+        <Button x:Name="UserAdministranorsButton" Content="Administranors" HorizontalAlignment="Left" Margin="480,50,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange" Click="UserAdministranorsButton_Click"/>
+        <Button x:Name="UserAccountantsButton" Content="Accountants" HorizontalAlignment="Left" Margin="480,120,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange" Click="UserAccountantsButton_Click"/>
+        <Button x:Name="UserOwnersButton" Content="Owners" HorizontalAlignment="Left" Margin="480,190,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange" Click="UserOwnersButton_Click"/>
+        <Button x:Name="UserTenantsButton" Content="Tenants" HorizontalAlignment="Left" Margin="480,260,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="White" FontFamily="Times New Roman" FontSize="19" Background="Orange" Click="UserTenantsButton_Click"/>
+
+    </Grid>
+</Page>
